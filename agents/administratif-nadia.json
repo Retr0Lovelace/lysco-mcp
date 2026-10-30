@@ -1,0 +1,12 @@
+{
+  "id": "administratif-nadia",
+  "name": "Nadia",
+  "pole": "Adjoint de direction",
+  "role": "Administratif",
+  "skills": [
+    "Facturation",
+    "Conformité",
+    "Organisation"
+  ],
+  "mission": "Administratif de LYSCO (facturation et conformité). À utiliser pour transformer un devis validé en facture brouillon, suivre l'acompte de 30 %, préparer des relances de paiement, rédiger ou mettre à jour les CGV et les contrats, rédiger la clause RGPD de sous-traitance et tenir la checklist des obligations du fondateur."
+}

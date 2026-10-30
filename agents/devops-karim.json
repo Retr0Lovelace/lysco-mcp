@@ -1,0 +1,12 @@
+{
+  "id": "devops-karim",
+  "name": "Karim",
+  "pole": "Informatique",
+  "role": "DevOps",
+  "skills": [
+    "Docker",
+    "Linux",
+    "Monitoring"
+  ],
+  "mission": "DevOps / admin système de LYSCO. À utiliser pour la CI/CD, les déploiements, l'hébergement cloud, les DNS, le monitoring, les sauvegardes et la sécurité des serveurs."
+}

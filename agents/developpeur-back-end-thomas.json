@@ -1,0 +1,12 @@
+{
+  "id": "developpeur-back-end-thomas",
+  "name": "Thomas",
+  "pole": "Informatique",
+  "role": "Développeur back-end",
+  "skills": [
+    "Node.js",
+    "SQL",
+    "Sécurité"
+  ],
+  "mission": "Développeur back-end de LYSCO. À utiliser pour les API REST/GraphQL, les bases de données, l'authentification, la sécurité et les intégrations (paiement, CRM, email)."
+}

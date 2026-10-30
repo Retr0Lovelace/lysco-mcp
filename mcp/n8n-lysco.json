@@ -1,0 +1,7 @@
+{
+  "id": "n8n-lysco",
+  "label": "n8n (stack LYSCO)",
+  "url": "http://n8n:5678/mcp-server/http",
+  "docsUrl": "https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/",
+  "setupNotes": "Serveur MCP intégré à n8n, dans le réseau Docker de la stack LYSCO (04_INFRASTRUCTURE/Docker_Configs/lysco-stack). Dans n8n, activer l'accès MCP de l'instance et créer un jeton, puis le saisir comme jeton Bearer dans Bots & accès. Les workflows ne sont exposés que s'ils sont activés pour MCP."
+}

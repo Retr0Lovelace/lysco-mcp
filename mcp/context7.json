@@ -3,5 +3,5 @@
   "label": "Context7 (documentation de bibliothèques)",
   "url": "https://mcp.context7.com/mcp",
   "docsUrl": "https://github.com/upstash/context7",
-  "setupNotes": "Serveur MCP public d'Upstash qui renvoie la documentation à jour des bibliothèques et frameworks (utile pour Sarah, Thomas et Lucas). Fonctionne sans clé ; une clé API facultative augmente les quotas. Tester la connexion avant d'attribuer ses outils de lecture."
+  "setupNotes": "Serveur MCP public d'Upstash qui renvoie la documentation à jour des bibliothèques et frameworks. Fonctionne sans clé ; une clé API facultative augmente les quotas. Tester la connexion avant d'attribuer ses outils de lecture."
 }

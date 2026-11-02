@@ -1,15 +1,18 @@
 ---
 name: qwen-traitement-local
 description: Confier un traitement de texte en masse au modèle local qwen (Ollama) pour économiser les tokens Claude. À utiliser pour résumer un long document, classer ou trier une liste, extraire des champs, traduire, reformuler ou faire un premier jet de messages répétitifs, au lieu de lire le contenu en entier dans le contexte.
+variables:
+  modele: Modèle Ollama | qwen3.5:9b
+  url_ollama: Adresse d'Ollama | http://localhost:11434
 ---
 
 # Traitement local avec qwen
 
-Outil : `03_PROJETS_INTERNE/Outils/qwen.py` (modèle `qwen3.5:9b` par défaut, sans token Claude, autorisé sans confirmation).
+Outil fourni avec ce skill : `.claude/skills/qwen-traitement-local/qwen.py` (modèle `{{modele}}`, Ollama sur `{{url_ollama}}`, sans token Claude).
 
 ```sh
-python3 -I 03_PROJETS_INTERNE/Outils/qwen.py "consigne" fichier1 fichier2
-cat liste.txt | python3 -I 03_PROJETS_INTERNE/Outils/qwen.py "consigne"
+python3 -I .claude/skills/qwen-traitement-local/qwen.py "consigne" fichier1 fichier2
+cat liste.txt | python3 -I .claude/skills/qwen-traitement-local/qwen.py "consigne"
 ```
 
 ## Quand l'utiliser
@@ -23,5 +26,5 @@ cat liste.txt | python3 -I 03_PROJETS_INTERNE/Outils/qwen.py "consigne"
 - Consigne courte et précise, avec le **format de sortie** attendu (CSV, puces, JSON).
 - Ne pas relire le fichier source dans le contexte : seul le résultat de qwen compte.
 - Vérifier un échantillon du résultat. S'il est faible, monter d'**un seul** cran (Haiku), jamais directement à un modèle plus cher.
-- Mémoire : qwen occupe environ 7,6 Go de RAM ; éviter de le lancer en même temps que toute la stack Docker sans surveiller.
+- Surveiller la mémoire : un modèle de 9 milliards de paramètres occupe plusieurs Go de RAM.
 - Ne jamais envoyer à qwen de document légal ou RH, ni de secret.

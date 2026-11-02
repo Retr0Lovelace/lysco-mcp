@@ -1,0 +1,10 @@
+{
+  "id": "n8n",
+  "label": "n8n (workflows)",
+  "url": "{{url_n8n}}",
+  "docsUrl": "https://docs.n8n.io/advanced-ai/accessing-n8n-mcp-server/",
+  "setupNotes": "Serveur MCP intégré à n8n. Dans n8n, active l'accès MCP de l'instance et crée un jeton, puis saisis-le comme jeton Bearer dans Bots & accès. Les workflows ne sont exposés que s'ils sont activés pour MCP.",
+  "variables": [
+    {"key": "url_n8n", "label": "Adresse du serveur MCP de n8n", "default": "http://n8n:5678/mcp-server/http"}
+  ]
+}
